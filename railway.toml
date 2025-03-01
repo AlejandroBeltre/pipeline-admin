@@ -1,0 +1,10 @@
+[build]
+builder = "NIXPACKS"
+
+[deploy]
+numReplicas = 2
+restartPolicyType = "ON_FAILURE"
+
+[variables]
+NIXPACKS_PKGS = "dotnet-sdk_8_0 nodejs"
+ASPNETCORE_ENVIRONMENT = "Production"
